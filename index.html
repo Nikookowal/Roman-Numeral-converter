@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numbers Converter</title>
+    <link rel="stylesheet" href="output.css"> 
+</head>
+<body class="flex flex-col  items-center text-center sm:bg-fit bg-no-repeat bg-cover bg-[url('roman.jpg')] w-screen h-screen">
+    
+<h1 class="text-black text-5xl font-semibold text-center mt-40 mb-10 font-serif ">Conversor de Numerais Romanos</h1>
+<p class="text-black text-3xl my-5 font-serif">Insira um número:</p>
+
+<div>
+    <input class="text-center border-2 border-solid border-black py-2 rounded-md font-serif required font-semibold" type="number" id="num">
+    <button class="bg-zinc-400 font-serif border-2 border-solid border-black font-semibold rounded-md w-32 py-2 " onclick="convertToRoman(document.getElementById('num').value)">Converter</button>
+</div>
+
+<div class="mt-20 flex flex-col">
+    <p class="text-black font-serif text-4xl">Numeral romano: </p>
+    <p class="text-black font-serif text-4xl font-bold mt-2" id="answer">___</p>
+</div>
+
+</body>
+
+<footer>
+
+</footer>
+
+<script src="main.js"></script>
+</html>
